@@ -1,0 +1,338 @@
+.auth {
+    height: 100vh;
+    width: 100vw;
+    background: #F7F8F7 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.auth_container {
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+}    
+    
+    
+.auth_container_image {
+    display: flex;
+    height: 100%;
+    width: 30%;
+    background: transparent url('../../assets/images/beautiful-sound-1755964_1280.png') 0% 0% no-repeat padding-box;
+    border-radius: 18px 0px 0px 18px;
+    opacity: 0.75;
+    position: relative;
+    
+
+
+    &_bgColor {
+        height: 100%;
+        width: 100%;
+        position:absolute;
+    }
+    &_content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &_logo {
+            height: 50px;
+            width: 100px;
+            position: absolute;
+            
+            
+        }
+        &_textField {
+            height: 15%;
+            width: 85%;
+            bottom: 50px;
+            right: 0px;
+            position: absolute;
+            background: #FFFFFF45 0% 0% no-repeat padding-box;
+            border-radius: 8px;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+
+            & text {
+                //  font: var(--unnamed-font-style-normal) normal 300 14px/23px var(--unnamed-font-family-poppins);
+                text-align: left;
+                font: normal normal 300 0.9em/1.4em Poppins;
+                letter-spacing: 0.8px;
+                color: #FFFFFF;
+                text-shadow: 0px 3px 6px #00000029;
+                opacity: 1;
+                margin-left: 8%;
+            }
+
+            & p {
+                font: var(--unnamed-font-style-normal) normal 600 16px/25px var(--unnamed-font-family-poppins);
+                text-align: left;
+                font: normal normal 600 16px/24px Poppins;
+                letter-spacing: 0.9px;
+                color: #FFFFFF;
+                text-shadow: 0px 3px 6px #00000029;
+                opacity: 1;
+                margin-left: 8%;
+            }
+            
+        }
+        
+    }
+    
+}
+   
+.auth_container_main  {
+    height: 100%;
+    width: 70%;
+    
+
+    &_header  {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        & img {
+            height: 30px;
+        }
+
+        &_back  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                
+                height: 12px;
+                width: 10px;
+                margin-bottom: 4px;
+                
+            }
+                
+            & text {
+                color: var(---041585-color-blue-dark);
+                text-align: center;
+                font: normal normal bold 1em poppins;
+                letter-spacing: 0.36px;
+                color: #041585;
+                padding-left: 4px;
+                
+            }
+        }
+    }
+}    
+
+.auth_container_main_content {
+    height: 70%;
+    width: 100%;
+    top:230px;
+    padding-left:30%;
+    padding-right: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    & text {
+        //font: var(--unnamed-font-style-normal) normal 600 22px/30px var(--unnamed-font-family-poppins);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: left;
+        font: normal normal 600 22px/30px Poppins;
+        letter-spacing: 0px;
+        color: #302E2E;
+        opacity: 1;
+    }
+}   
+
+.auth_container_main_content2 {
+    height: 90%;
+    width: 100%;
+    top:230px;
+    padding-left:30%;
+    padding-right: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    & text {
+        //font: var(--unnamed-font-style-normal) normal 600 22px/30px var(--unnamed-font-family-poppins);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: left;
+        font: normal normal 600 22px/30px Poppins;
+        letter-spacing: 0px;
+        color: #302E2E;
+        opacity: 1;
+    }
+
+
+    & p {
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 12px/30px var(--unnamed-font-family-poppins);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: left;
+        font: normal normal normal 12px/30px Poppins;
+        letter-spacing: 0px;
+        color: #404040;
+        opacity: 1;
+    }
+} 
+
+.Btn_phNo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 48px;
+    background: transparent linear-gradient(180deg, #8C37F6 0%, #1431FB 100%) 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/24px var(--unnamed-font-family-poppins);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font: normal normal normal 16px/24px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.Btn_email {
+    width: 270px;
+    height: 48px;
+    border: 2px solid #29292966;
+    border-radius: 23px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/24px var(--unnamed-font-family-poppins);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font: normal normal normal 16px/24px Poppins;
+    letter-spacing: 0px;
+    color: #302E2E;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Btn_google{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 270px;
+    height: 48px;
+    border: 2px solid #29292966;
+    border-radius: 23px;
+    opacity: 1;
+
+    & img  {
+        height: 15px;
+        width: 15px;
+        
+    }
+
+    & text {
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/24px var(--unnamed-font-family-poppins);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: left;
+        font: normal normal normal 16px/24px Poppins;
+        letter-spacing: 0px;
+        color: #DB4437;
+        opacity: 1;
+        margin-right: 45px;
+    }
+
+}
+
+.Btn_facebook {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 270px;
+    height: 48px;
+    border: 2px solid #29292966;
+    border-radius: 23px;
+    opacity: 1;
+
+    & img  {
+        height: 15px;
+        width: 10px;
+        
+        
+    }
+
+    & text {
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/24px var(--unnamed-font-family-poppins);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        text-align: left;
+        font: normal normal normal 16px/24px Poppins;
+        letter-spacing: 0px;
+        color: #4267B2;
+        opacity: 1;
+        margin-right: 25px;
+    }
+}
+
+.title {
+    height: 15%;
+}
+ 
+.withPhoneNo {
+    height: 40%;
+    
+    &_form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+
+        &_formItem {
+            height: 40px;
+            width: 270px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 1px 2px 7px #0000001A;
+            border: 1px solid #9898989E;
+            border-radius: 10px;
+            
+
+            
+
+        }
+
+        & button {
+            width: 160px;
+            height:40px;
+            margin-left: 15%;
+            background: transparent linear-gradient(90deg, #8C37F6 0%, #4D34F9 59%, #1431FB 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 26px #00000042;
+            border-radius: 32px;
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/25px var(--unnamed-font-family-poppins);
+            text-align: center;
+            font: normal normal normal 16px/25px Poppins;
+            letter-spacing: 0.8px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+    }
+
+    
+}
+
+.social-link {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+    
+
+    
+
+
