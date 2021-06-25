@@ -37,7 +37,7 @@ function SignUp() {
                     </div>
                     <div className='auth_container_main_content'>
                         <text>Create an  account</text>
-                        <Link to='/' className='Btn_phNo'>Continue with phone number</Link>
+                        <Link to='/signup-no' className='Btn_phNo'>Continue with phone number</Link>
                         <Link to='/' className='Btn_email'>Continue with email</Link>
                         <Link to='/' className='Btn_google'>
                             <img src={googleLogo} alt='google logo' />

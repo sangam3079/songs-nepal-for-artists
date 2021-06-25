@@ -13,7 +13,7 @@ import { ArrowLeftOutlined, UserOutlined,LockOutlined } from '@ant-design/icons'
 import { Form, Input, Button, Tooltip, Typography } from 'antd';
 
 
-function LoginWithNum() {
+function SignUpWithNum() {
 
     const onFinish = (values) => {
         console.log('Success:', values);
@@ -47,13 +47,13 @@ function LoginWithNum() {
                             <text>Back</text>
                         </Link>
                     </div>
-                    <div className='auth_container_main_content_loginWithNum'>
+                    <div className='auth_container_main_content_signUpWithNum'>
                         <div className='withPhoneNoTitle'>
                             <text>Lets sign you in</text>
                             <p>Sign in with  your phone number</p>
                         </div>
                         
-                        <div className='withPhoneNumLogin'>
+                        <div className='withPhoneNumSignUp'>
                             
                                 <Form
                                     className='withPhoneNo_form'
@@ -63,11 +63,12 @@ function LoginWithNum() {
                                     onFinish={onFinish}
                                     onFinishFailed={onFinishFailed}
                                     >
+
                                     <div className='withPhoneNo_form_formItem'>    
                                         <Form.Item
                                             
                                             name="username"
-                                           // bordered={false}
+                                        // bordered={false}
                                             rules={[
                                             {
                                                 required: true,
@@ -76,10 +77,26 @@ function LoginWithNum() {
                                             ]}
                                         >   
                                             
-                                            <Input bordered={false}  size="large" placeholder="username" prefix={<img src={nepalIcon} alt='nepalFlag' height={12}/>} defaultValue="+977"/>
+                                            <Input bordered={false}  size="large" placeholder="username" prefix={<UserOutlined />} defaultValue=""/>
                                         </Form.Item>
                                     </div>
-                                    <span ></span>
+                                    <div className='withPhoneNo_form_formItem'>    
+                                        <Form.Item
+                                            
+                                            name="username"
+                                           // bordered={false}
+                                            rules={[
+                                            {
+                                                required: true,
+                                                message: 'Please input your phone number!',
+                                            },
+                                            ]}
+                                        >   
+                                            
+                                            <Input bordered={false}  size="large"  prefix={<img src={nepalIcon} alt='nepalFlag' height={12}/>} defaultValue="+977"/>
+                                        </Form.Item>
+                                    </div>
+                                    
                                     <div className='withPhoneNo_form_formItem'>
                                     <Form.Item
                                         
@@ -94,11 +111,6 @@ function LoginWithNum() {
                                         <Input.Password  bordered={false} size="large" placeholder="password" prefix={<LockOutlined/>} />
                                     </Form.Item>
                                     </div>
-                                    <div className='withPhoneNo_form_forgetPassword'>
-                                        <a className="login-form-forgot" href="">
-                                            forgot password ?
-                                        </a>
-                                    </div>
                                     
                                     <Link to='/code-verification' className='withPhoneNo_form_Btn'>
                                       <Button bordered={false}>Log In</Button>  
@@ -109,19 +121,7 @@ function LoginWithNum() {
                                                       
                         </div>
                         
-                        <div className='social-link'>
-                           <p>you can also use social login if you haven't registered your account.</p>
-
-                            <Link to='/' className='Btn_google'>
-                                <img src={googleLogo} alt='google logo' />
-                                <text> Log in with google </text>
-                            
-                            </Link>
-                            <Link to='/' className='Btn_facebook'>
-                                <img src={fbLogo} alt='fblogo' />
-                                <text> Log in with facebook </text>
-                            </Link>
-                        </div>
+                        
                         
                     </div>
                 </div>
@@ -131,4 +131,4 @@ function LoginWithNum() {
     )
 }
 
-export default LoginWithNum
+export default SignUpWithNum

@@ -5,7 +5,9 @@ import ArtistType from './components/ArtistType'
 import SignUp from './components/Auth/SignUp/SignUp'
 import Login from './components/Auth/Login/Login'
 import LoginWithNum from './components/Auth/Login/LoginWithPhNo'
+import SignUpWithNum from './components/Auth/SignUp/SignUpWithNum'
 import CodeVerification from './components/Auth/Login/CodeVerification'
+import Claim from './components/Claim'
 
 
 
@@ -14,9 +16,21 @@ function App() {
     <div className="App">
     <Switch>
       <Route
+        exact path='/claim' 
+        render={() => (
+        <Claim/>
+        )}
+      />
+      <Route
         exact path='/code-verification' 
         render={() => (
         <CodeVerification/>
+        )}
+      />
+      <Route
+        exact path='/signup-no' 
+        render={() => (
+        <SignUpWithNum />
         )}
       />
       <Route
